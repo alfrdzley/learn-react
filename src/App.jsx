@@ -1,7 +1,11 @@
-import Gallery from "../Gallery";
+import Gallery from './Gallery.jsx';
+import Profile from './Profile.jsx';
 
 export default function App() {
-  return (
+  return(
+    <div>
+    <Profile />
     <Gallery />
+    </div>
   );
 }
