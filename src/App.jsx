@@ -1,15 +1,11 @@
-export default function TodoList() {
-  return (
-    <>
-    <h1>
-      SYERA AL-FARIDZI
-    </h1>
-    <img src="https://avatars.githubusercontent.com/u/9143296?v=4" alt="Syera Al-Faridzi" width="200" />
-    <ul>
-      <li>Belajar React</li>
-      <li>Belajar Vue</li>
-      <li>Belajar Angular</li>
-    </ul>
-    </>
+const date = new Date();
+
+function formatdate(date) {
+  return new Intl.DateTimeFormat('en-US', { weekday: 'long' } ).format(date);
+}
+
+export default function Todolist() {
+  return(
+    <h1>To do list for {formatdate(date)}</h1>
   )
 }
